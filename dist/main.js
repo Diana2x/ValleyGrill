@@ -1,1 +1,1 @@
-console.log("Hi this is Diana!!");
+document.getElementById("div");
