@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Staatliches&display=swap');
+
+:root {
+  --font-color: #eee;
+  --font-color-dark: rgb(212, 210, 210);
+  --border-color: #222;
+  --background-light: rgba(0, 0, 0, 0.6);
+  --background-light-hover: rgba(99, 99, 99, 0.4);
+  --background-dark: rgba(0, 0, 0, 0.9);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6;
+
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    color: var(--font-color-dark);
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+.nav-button:hover{
+    text-decoration: underline;
+    color: var(--font-color);
+    transform: scale(1.2);
+}
+
+.restaurant-name {
+    font-size: 7rem;
+    letter-spacing: .5rem;
+    text-align: center;
+    font-family: 'Staatliches', cursive, Arial, Helvetica, sans-serif;
+}
