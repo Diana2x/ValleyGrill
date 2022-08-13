@@ -1,4 +1,5 @@
 import loadHome from "./home";
+import loadMenu from "./menu";
 
 function createNavbar(){
     const nav = document.createElement("nav"); 
@@ -17,6 +18,11 @@ function createNavbar(){
     const menuButton = document.createElement("button"); 
     menuButton.classList.add("nav-button");
     menuButton.textContent = "Menu"; 
+    menuButton.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(menuButton);
+        loadMenu();
+    });
 
 //
 
