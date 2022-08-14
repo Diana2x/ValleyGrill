@@ -54,7 +54,7 @@ function createMain() {
     main.classList.add("main");
     main.setAttribute("id", "main");
     return main;
-  }
+}
 
 function createFooter(){
     const footer = document.createElement("footer");
@@ -71,6 +71,7 @@ function createFooter(){
     footer.appendChild(footerButton);
     return footer;
 }
+
 function loadWebsite(){
     const content = document.getElementById("content");
     
