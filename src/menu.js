@@ -17,8 +17,8 @@ function createMenu(){
     );
     menuContainer.appendChild(
         createMenuItem(
-            "Ribeye", 
-            "Ender, juicy, and well-marbled",
+            "Ribeye Tender", 
+            "Tender, juicy, and well-marbled",
             "60"
         )  
     );
@@ -38,8 +38,8 @@ function createMenu(){
     );
     menuContainer.appendChild(
         createMenuItem(
-            "Ribeye", 
-            "Ender, juicy, and well-marbled",
+            "Ribeye Tender", 
+            "Tender, juicy, and well-marbled",
             "60"
         )  
     );
@@ -67,9 +67,10 @@ function createMenuItem(name, description, price){
 
     const foodDescription = document.createElement("p"); 
     foodDescription.textContent = description; 
+    foodDescription.classList.add("food-description")
 
     const foodPrice = document.createElement("p");
-    foodPrice.innerHTML = `Price: <b>$${price}</b>`; 
+    foodPrice.innerHTML = `Price: <b>$${price}</b>`;
 
     const foodImage = document.createElement("img");
     foodImage.src = `images/${name.split(' ').join('').toLowerCase()}.png`;
