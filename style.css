@@ -27,12 +27,15 @@ html {
 }
 #content {
   background-image: url("images/ValleyBackground3.png");
+  position: fixed;
+  background-color: black;
   width: 100%;
   height: 100vh;
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
   font-family: var(--font-text);
+  overflow: scroll;
 }
 .navbar{
     background-color: rgba(32, 27, 32);
@@ -100,11 +103,13 @@ html {
   right:0;
 }
 
+/* MENU AREA */
+
 .menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  width: 100%;
 }
 
 .menu h1 {
@@ -116,27 +121,26 @@ html {
 .menu-container {
   background-color: rgba(0, 0, 0, 0.5);
   color: var(--font-color); 
-  margin: 30px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  place-items: center;
+  height: calc(100vh - 16vh - 64px);
+  border: 2px solid pink;
 }
 
 .menu-item {
   border: 2px solid var(--background-dark);
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
+  width: 250px;
   height: 250px;
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
   padding: 10px;
   margin: 10px;
+  text-align: center;
+  place-items: center;
 }
 
 .menu-item h2 {
@@ -148,12 +152,16 @@ html {
 .menu-item p {
   font-size: 1.2rem;
 }
+.food-description{
+  text-align: center;
+}
 
 .menu-item img {
   width: 150px;
   height: 100px;
   border-radius: 15px;
   object-fit: cover;
+  place-items: center;
 }
 
 
