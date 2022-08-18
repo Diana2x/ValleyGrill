@@ -1,6 +1,6 @@
 function createHomepage(){
     const homePage = document.createElement("div");
-    homePage.classList.add("home-page"); 
+    homePage.classList.add("home-page", "main-content"); 
 
     const restaurantName = document.createElement("h1"); 
     restaurantName.classList.add("restaurant-name");
