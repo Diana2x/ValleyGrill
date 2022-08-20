@@ -2,7 +2,7 @@ function createMenu(){
     const menu = document.createElement("div");
     menu.classList.add("menu", "main-content"); 
     const menuHeader =  document.createElement("h1"); 
-    menuHeader.classList.add("menu-header");
+    menuHeader.classList.add("page-header");
     menuHeader.textContent = "The Best Grilled Steaks"; 
 
 

@@ -1,3 +1,59 @@
-// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24165.322981578433!2d-73.91953155079412!3d40.79137022559751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25f4301052bb5%3A0x41d781167efe773b!2sBohemian%20Hall!5e0!3m2!1sen!2snl!4v1660508183854!5m2!1sen!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+var script = document.createElement('script');
+script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhzV8lDxZKil0uHpm3sPAIEHskKZIiMA&callback=initMap';
+script.defer = true;
 
 
+function createContact(){
+    const contactPage = document.createElement("div");
+    contactPage.classList.add("contact", "main-content"); 
+
+    const contactHeader = document.createElement("h1");
+    contactHeader.classList.add("page-header", "menu-header");
+    contactHeader.innerText = "Contact Us"
+
+
+    const contactDiv = document.createElement("div");
+    contactDiv.classList.add("contact-container");
+    const telephone = document.createElement("p");
+    telephone.innerHTML = `<b>Telephone</b>: 0677887977`;
+    const address = document.createElement("p");
+    address.innerHTML = `<b>Address</b>: Stationsplein 5K, 2312 AJ, Leiden.`;
+    const mapContainer = document.createElement("div");
+    mapContainer.setAttribute("id", "map");
+   
+    
+    contactPage.appendChild(contactHeader);
+    contactPage.appendChild(contactDiv);
+    contactDiv.appendChild(telephone);
+    contactDiv.appendChild(address);
+    contactDiv.appendChild(mapContainer);
+
+
+    return contactPage;
+}
+
+
+window.initMap = () => {
+    // The location of Uluru
+    const uluru = { lat: 52.1601, lng: 4.4970 };
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 12,
+        center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+    });
+}
+
+
+function loadContact(){
+    document.head.appendChild(script);
+    const main = document.getElementById("main");
+    main.textContent = "";
+    main.appendChild(createContact());
+}
+
+export default loadContact;

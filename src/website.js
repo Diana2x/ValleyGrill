@@ -1,5 +1,6 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
+import loadContact from "./contact";
 
 function createNavbar(){
     const nav = document.createElement("nav"); 
@@ -14,7 +15,7 @@ function createNavbar(){
         loadHome();
     });
 
-// 
+
     const menuButton = document.createElement("button"); 
     menuButton.classList.add("nav-button");
     menuButton.textContent = "Menu"; 
@@ -24,12 +25,16 @@ function createNavbar(){
         loadMenu();
     });
 
-//
+    const contactButton = document.createElement("button"); 
+    contactButton.classList.add("nav-button");
+    contactButton.textContent = "Contact"; 
+    contactButton.addEventListener("click", (e) => {
+        if(e.target.classList.contains("active")) return;
+        setActiveButton(contactButton);
+        loadContact()
+    });
 
-const contactButton = document.createElement("button"); 
-contactButton.classList.add("nav-button");
-contactButton.textContent = "Contact"; 
-
+    
     nav.appendChild(homeButton);
     nav.appendChild(menuButton);
     nav.appendChild(contactButton);
