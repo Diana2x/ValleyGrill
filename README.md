@@ -18,4 +18,4 @@ This is a project for the [TOP curriculum](https://www.theodinproject.com/)
 
 ### Sample Preview
 
-[Preview: ](https://i.gyazo.com/8003521cc8632e1b6180dcf64f9d58b2.jpg)
+![Valley Grill ](https://i.gyazo.com/8003521cc8632e1b6180dcf64f9d58b2.jpg)
