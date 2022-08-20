@@ -108,9 +108,7 @@ html {
 
 
 
-/* MENU AREA */
-
-.menu h1 {
+.page-header {
   font-size: 4rem;
   letter-spacing: .5rem;  
   font-family: var(--font-Heading);
@@ -118,8 +116,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
+/* MENU AREA */
 
 .menu-container {
   color: var(--font-color); 
@@ -169,13 +168,24 @@ html {
 }
 
 /*CONTACT US AREA*/
+.contact-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color)
+}
 
-
-
-
-
-
-
+#map {
+  height: 300px;
+  width: 40%;
+  border-radius: 20px;
+  border: 1px solid pink;
+}
 
 
 /*SCROLLBAR*/
