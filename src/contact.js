@@ -17,15 +17,18 @@ function createContact(){
     const telephone = document.createElement("p");
     telephone.innerHTML = `<b>Telephone</b>: 0677887977`;
     const address = document.createElement("p");
-    address.innerHTML = `<b>Address</b>: Stationsplein 5K, 2312 AJ, Leiden.`;
+    address.innerHTML = `<b>Address</b>:<br> Stationsplein 5K, 2312 AJ, Leiden.`;
+    const openingTimes = document.createElement("p");
+    openingTimes.innerHTML = `<b>Opening Hours</b><br><b>Monday - Saturday:</b> 12:00pm. to 12:00am.<br><b>Sunday:</b> Closed. `;
     const mapContainer = document.createElement("div");
     mapContainer.setAttribute("id", "map");
    
     
     contactPage.appendChild(contactHeader);
     contactPage.appendChild(contactDiv);
-    contactDiv.appendChild(telephone);
     contactDiv.appendChild(address);
+    contactDiv.appendChild(telephone);
+    contactDiv.appendChild(openingTimes);
     contactDiv.appendChild(mapContainer);
 
 

@@ -180,6 +180,9 @@ html {
   color: var(--font-color)
 }
 
+.contact {
+  letter-spacing: 1px;
+}
 #map {
   height: 300px;
   width: 40%;
@@ -188,6 +191,7 @@ html {
   background-image: url(./images/map.png);
   background-size: cover;
 }
+
 
 
 /*SCROLLBAR*/
