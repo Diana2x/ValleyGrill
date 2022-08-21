@@ -183,16 +183,20 @@ html {
 .contact {
   letter-spacing: 1px;
 }
-#map {
+
+.map-container{
   height: 300px;
   width: 40%;
   border-radius: 20px;
   border: 1px solid pink;
-  background-image: url(./images/map.png);
   background-size: cover;
+
 }
-
-
+.map {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+}
 
 /*SCROLLBAR*/
 /* width */
