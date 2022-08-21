@@ -1,5 +1,5 @@
 var script = document.createElement('script');
-script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBqhzV8lDxZKil0uHpm3sPAIEHskKZIiMA&callback=initMap';
+script.src = 'https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap';
 script.defer = true;
 
 
